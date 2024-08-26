@@ -1,0 +1,104 @@
+/*
+Theme Name: Base
+Author: MoHX
+Description: Base Theme
+Requires at least: 6.4
+Tested up to: 6.4
+Requires PHP: 8.0
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: base
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/
+
+/* style.css */
+
+/* Globale Stile */
+html{
+    background-color: #3598DB;
+}
+
+/*Logo*/
+#logo img {
+    width: 25%;
+    margin: 0 auto;
+}
+/*Slogan*/
+#slogan h1 {
+    text-align: left;
+    color:#ffffff
+}
+
+/* Menuü */
+#header-menu{
+    width:100%
+
+}
+.navbar-nav {
+    display: flex ;
+    flex-direction: row !important;
+    list-style: none ;
+    padding: 2% ;
+}
+.navbar-nav li {
+   margin-right: 15px ;
+}
+.navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px ;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.navbar-nav li a:hover{
+border-color: #ffff;
+}
+
+@media (max-width: 933px) {
+    #header-menu .navbar-nav {
+        display: none;
+    }
+    #header-menu .navbar-toggler {
+        display: block;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+     min-height: 100vh;
+     margin: 0 !important;
+     padding: 0 !important;
+
+}
+
+main {
+    flex: 1;
+    background-color: #ecf0f1;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+}
+
+#slider {
+        width: 100%;
+        height: auto;
+}
+#slider img {
+    height: 20rem;
+}
+
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
